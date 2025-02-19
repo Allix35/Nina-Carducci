@@ -1,28 +1,69 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+    <!-- Préchargement des ressources critiques -->
+    <link rel="preload" href="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp" as="image">
+    <link rel="preload" href="./assets/style.min.css" as="style">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" as="style">
+    
+	<!-- Balises Meta SEO -->
+	<title>Nina Carducci | Photographe Professionnelle à Bordeaux</title>
+	<meta name="description" content="Découvrez le portfolio de Nina Carducci, photographe professionnelle spécialisée dans les mariages, concerts, portraits et événements d'entreprise sur Bordeaux et alentours. Réservez votre séance photo dès aujourd'hui !">
+	<meta name="keywords" content="Photographe, Mariage, Concert, Portrait, Entreprise, Bordeaux, Shooting photo, Retouches, Album photos, Professionnel">
+	<meta name="author" content="Nina Carducci">
+	<meta name="robots" content="index, follow">
+
+	<!-- Open Graph pour Facebook et réseaux sociaux -->
+	<meta property="og:title" content="Nina Carducci | Photographe à Bordeaux">
+	<meta property="og:description" content="Découvrez le portfolio de Nina Carducci, photographe professionnelle à Bordeaux spécialisée en portraits, mariages et événements.">
+	<meta property="og:image" content="https://allix35.github.io/Nina-Carducci/assets/images/nina.webp">
+	<meta property="og:url" content="https://allix35.github.io/Nina-Carducci/">
+	<meta property="og:type" content="website">
+
+	<!-- Feuilles de style -->
 	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css">
-	<link rel="stylesheet" href="./assets/style.css">
+	<link rel="stylesheet" href="./assets/style.min.css">
+	<link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+
+
+	
+    <!-- Polices Google Fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
-	<meta charset="UTF-8">
+	
+    <meta charset="UTF-8">
 
-	<!-- jQuery sans async pour éviter les conflits avec Bootstrap -->
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js" 
-		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" 
-		crossorigin="anonymous"></script>
-
-	<!-- Scripts avec defer pour éviter de bloquer le rendu -->
-	<script src="./assets/bootstrap/bootstrap.bundle.js" defer></script>
-	<script src="./assets/maugallery.js" defer></script>
-	<script src="./assets/scripts.js" defer></script>
+	<script type="application/ld+json">
+		{
+		  "@context": "https://schema.org",
+		  "@type": "Photographer",
+		  "name": "Nina Carducci",
+		  "url": "https://allix35.github.io/Nina-Carducci/",
+		  "image": "https://allix35.github.io/Nina-Carducci/assets/images/nina.webp",
+		  "description": "Photographe professionnelle à Bordeaux, spécialisée en portraits, mariages et événements.",
+		  "address": {
+			"@type": "PostalAddress",
+			"streetAddress": "68 avenue Alsace-Lorraine",
+			"addressLocality": "Bordeaux",
+			"postalCode": "33200",
+			"addressCountry": "FR"
+		  },
+		  "telephone": "+33556677889",
+		  "openingHours": "Mo-Fr 10:00-19:00",
+		  "sameAs": [
+			"https://www.instagram.com/ninacarducci.photo/"
+		  ]
+		}
+		</script>		
 </head>
+
 <body>
 <div class="top-header">
 	<h3 class="name">Nina Carducci</h3>
-	<div class="nav">   
+	<nav class="nav">   
 		<ul>
 			<li><a href="#about">À propos</a></li>
 			<li><a href="#gallery">Galerie</a></li>
@@ -34,11 +75,11 @@
 				</a>
 			</li>
 		</ul>
-	</div>
+	</nav>
 </div>
 
 <!-- SLIDER -->
-<div id="header">
+<section id="header">
 	<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
 		<div class="carousel-indicators">
 			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -65,10 +106,10 @@
 			<span class="visually-hidden">Next</span>
 		</button>
 	</div>
-</div>
+</section>
 
 <!-- SECTION À PROPOS DE MOI -->
-<div id="about">
+<section id="about">
 	<div class="picture left">
 		<img src="./assets/images/nina.webp" alt="Portrait de Nina Carducci" loading="lazy">
 	</div>
@@ -77,10 +118,10 @@
 		<h6 class="about-me__introduction">Devenir photographe était pour moi une évidence. Comme si j’y étais prédestinée. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</h6>
 		<p>Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n’avons qu’une envie : le figer au travers de photographies pour le savourer avec les personnes qui sont importantes à nos yeux, ou le partager au plus grand nombre. C’est ce que je vous propose : saisir ces merveilleux moments au travers de mon regard, mon approche, ma technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l’amour, du bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
 	</div>
-</div>
+</section>
 
 <!-- GALLERY -->
-<div id="gallery">
+<section id="gallery">
 	<h3 class="title">Portfolio</h3>
 	<div class="container py-3">
 		<div class="gallery">
@@ -94,17 +135,17 @@
 			<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.webp" alt="Portrait" loading="lazy"/>
 			<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.webp" alt="Portrait" loading="lazy"/>
 		</div>
-	</div>
-	<div class="quote">
+	</section>
+	<section class="quote">
 		<figure>
 			<blockquote>
 				<h1 class="quote__text">Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou qu’un fait est traduit en photo, il cesse d’être un fait pour devenir une opinion. L’inexactitude n’existe pas en photographie. Toutes les photos sont exactes. Aucune d’elles n’est la vérité.</h1>
 			</blockquote>
 			<figcaption class="quote__author">- Richard Avedon</figcaption>
 		</figure>
-	</div>
+	</section>
 </div>
-<div id="services">
+<section id="services">
 	<h3 class="title">Mes services</h3>
 	<div class="container">
 		<div class="service">
@@ -139,15 +180,15 @@
 			</div>
 		</div>
 	</div>
-</div>
-<div class="quote">
+</section>
+<section class="quote">
 	<figure>
 		<blockquote>
 			<h1 class="quote__text">De manière inconsciente, je crois, je guette un regard, une expression, des traits ou une nostalgie capable de résumer ou plus exactement de révéler une vie</h1>
 		</blockquote>
 		<figcaption class="quote__author">- Richard Avedon</figcaption>
 	</figure>
-</div>
+</section>
 <div id="contact">
 	<div class="container">
 		<div class="form-container">
@@ -168,10 +209,19 @@
 		</div>
 	</div>
 </div>
+
+<!-- jQuery sans async pour éviter les conflits avec Bootstrap -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" 
+integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" 
+crossorigin="anonymous"></script>
+
+<!-- Scripts avec defer pour éviter de bloquer le rendu -->
+<script src="./assets/bootstrap/bootstrap.bundle.js" defer></script>
+<script src="./assets/maugallery.js" defer></script>
+<script src="./assets/scripts.min.js" defer></script>
+
 </body>
 </html>
-
-
 
 
 

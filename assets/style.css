@@ -2,10 +2,14 @@ body {
 	max-width: 1920px;
 	margin: auto;
 }
+
 * {
 	font-family: 'Inter';
 	font-style: normal;
+	src: url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+    font-display: swap;
 }
+
 .top-header {
 	background-color: white;
 	position: sticky;
