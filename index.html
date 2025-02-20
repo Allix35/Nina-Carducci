@@ -22,6 +22,14 @@
 	<meta property="og:url" content="https://allix35.github.io/Nina-Carducci/">
 	<meta property="og:type" content="website">
 
+	<!-- Twitter Card meta -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Nina Carducci | Photographe à Bordeaux">
+	<meta name="twitter:description" content="Découvrez le portfolio de Nina Carducci, photographe professionnelle spécialisée en portraits, mariages et événements à Bordeaux.">
+	<meta name="twitter:image" content="https://allix35.github.io/Nina-Carducci/assets/images/nina.webp">
+	<meta name="twitter:url" content="https://allix35.github.io/Nina-Carducci/">
+	<meta name="twitter:creator" content="@ninacarducci.photo">
+
 	<!-- Feuilles de style -->
 	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css">
 	<link rel="stylesheet" href="./assets/style.min.css">
@@ -38,26 +46,43 @@
 
 	<script type="application/ld+json">
 		{
-		  "@context": "https://schema.org",
-		  "@type": "Photographer",
-		  "name": "Nina Carducci",
-		  "url": "https://allix35.github.io/Nina-Carducci/",
-		  "image": "https://allix35.github.io/Nina-Carducci/assets/images/nina.webp",
-		  "description": "Photographe professionnelle à Bordeaux, spécialisée en portraits, mariages et événements.",
-		  "address": {
-			"@type": "PostalAddress",
-			"streetAddress": "68 avenue Alsace-Lorraine",
-			"addressLocality": "Bordeaux",
-			"postalCode": "33200",
-			"addressCountry": "FR"
-		  },
-		  "telephone": "+33556677889",
-		  "openingHours": "Mo-Fr 10:00-19:00",
-		  "sameAs": [
-			"https://www.instagram.com/ninacarducci.photo/"
-		  ]
+			"@context": "https://schema.org",
+			"@type": "LocalBusiness",
+			"name": "Nina Carducci Photographe",
+			"image": "https://allix35.github.io/Nina-Carducci/assets/images/nina.webp",
+			"@id": "https://allix35.github.io/Nina-Carducci/",
+			"url": "https://allix35.github.io/Nina-Carducci/",
+			"telephone": "+33556677889",
+			"priceRange": "€€",
+			"address": {
+				"@type": "PostalAddress",
+				"streetAddress": "68 avenue Alsace-Lorraine",
+				"addressLocality": "Bordeaux",
+				"postalCode": "33200",
+				"addressCountry": "FR"
+			},
+			"geo": {
+				"@type": "GeoCoordinates",
+				"latitude": "44.8378",
+				"longitude": "-0.5792"
+			},
+			"openingHoursSpecification": {
+				"@type": "OpeningHoursSpecification",
+				"dayOfWeek": [
+					"Monday",
+					"Tuesday",
+					"Wednesday",
+					"Thursday",
+					"Friday"
+				],
+				"opens": "10:00",
+				"closes": "19:00"
+			},
+			"sameAs": [
+				"https://www.instagram.com/ninacarducci.photo/"
+			]
 		}
-		</script>		
+		</script>				
 </head>
 
 <body>
@@ -195,20 +220,27 @@
 			<h3>Une question ? Une demande de devis ?</h3>
 			<p> N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures</p>
 			<form action="" method="post">
-				<label>Nom</label>
-				<input type="text" name="nom" id="nom">
-				<label>Email</label>
-				<input type="email" name="email" id="email">
-				<label>Message</label>
-				<textarea name="message" id="message" cols="30" rows="10"></textarea>
+				<label for="nom">Nom</label>
+				<input type="text" name="nom" id="nom" required>
+			
+				<label for="email">Email</label>
+				<input type="email" name="email" id="email" required>
+			
+				<label for="message">Message</label>
+				<textarea name="message" id="message" cols="30" rows="10" required></textarea>
+			
 				<input type="submit" value="Envoyer"/>
 			</form>
+			
 		</div>
 		<div class="picture right">
-			<img src="assets/images/instagram.webp" alt="Suivez Nina Carducci sur Instagram" loading="lazy">
+			<img src="assets/images/camera.webp" alt="Suivez Nina Carducci sur Instagram" loading="lazy">
 		</div>
 	</div>
 </div>
+<footer>
+    <p class="copyright">&copy; 2025 Nina Carducci - Tous droits réservés</p>
+</footer>
 
 <!-- jQuery sans async pour éviter les conflits avec Bootstrap -->
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" 
