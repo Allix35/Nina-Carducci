@@ -1,6 +1,11 @@
 body {
 	max-width: 1920px;
 	margin: auto;
+    color: #222; 
+}
+
+h1, h2, h3, h4 {
+    color: #111;
 }
 
 * {
@@ -44,6 +49,12 @@ body {
 
 .social-link img {
 	width: 20px;
+}
+
+.carousel-item img {
+    width: 100%; /* Prend toute la largeur */
+    height: auto; /* Garde le ratio */
+    object-fit: cover; /* Couvre sans déformation */
 }
 
 #about {
