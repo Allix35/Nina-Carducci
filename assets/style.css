@@ -1,9 +1,9 @@
 body {
 	max-width: 1920px;
 	margin: auto;
+	background-color: #F9F9F9;
 }
-
-
+	  
 * {
     font-family: 'Inter';
     src: url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
@@ -41,8 +41,12 @@ body {
 
 .nav a {
 	text-decoration: none;
-	color: #000
 }
+
+.nav a, .nav-pills .nav-link {
+	color: #222222; 
+}
+  
 
 .social-link img {
 	width: 20px;
