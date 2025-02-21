@@ -11,12 +11,12 @@
 <IfModule mod_expires.c>
     ExpiresActive On
 
-    # Durée de mise en cache pour chaque type de fichier
+    # Durée de mise en cache des fichiers statiques (1 an)
     ExpiresByType text/html "access plus 1 hour"
-    ExpiresByType text/css "access plus 1 month"
-    ExpiresByType text/javascript "access plus 1 month"
-    ExpiresByType application/javascript "access plus 1 month"
-    ExpiresByType application/x-javascript "access plus 1 month"
+    ExpiresByType text/css "access plus 1 year"
+    ExpiresByType text/javascript "access plus 1 year"
+    ExpiresByType application/javascript "access plus 1 year"
+    ExpiresByType application/x-javascript "access plus 1 year"
     ExpiresByType image/jpeg "access plus 1 year"
     ExpiresByType image/png "access plus 1 year"
     ExpiresByType image/gif "access plus 1 year"
@@ -37,6 +37,7 @@
         Header set Cache-Control "public, max-age=31536000, immutable"
     </FilesMatch>
 </IfModule>
+
 
 # Activation de la compression Gzip et Brotli si disponibles
 <IfModule mod_deflate.c>
