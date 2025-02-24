@@ -1,16 +1,17 @@
 body {
 	max-width: 1920px;
 	margin: auto;
-	background-color: #595959;
+	background-color: #F9F9F9;
 }
-	  
+
+
+
 * {
     font-family: 'Inter';
     src: url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
     font-display: swap;
 	font-style: normal;
 }
-
 
 .top-header {
 	background-color: white;
