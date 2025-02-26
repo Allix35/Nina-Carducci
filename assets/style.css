@@ -266,14 +266,40 @@ input[type="submit"] {
 footer {
     background-color: #353535;
     color: white;
-    padding: 20px;
+    padding: 40px 20px;
     text-align: center;
 }
 
-.copyright {
-    font-size: 14px;
-    margin-top: 10px;
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    flex-wrap: wrap;
 }
+
+.footer-contact, .footer-text {
+    flex: 1;
+    min-width: 280px;
+    text-align: left;
+    padding: 10px;
+}
+
+.footer-contact a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-contact a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    margin-top: 20px;
+    font-size: 14px;
+    color: white;
+}
+
 
 
 @media all and (max-width: 1180px) {
