@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+
+	<meta charset="UTF-8">
+
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
-    <!-- Préchargement des ressources critiques -->
+    <!-- Preload of critical ressources -->
     <link rel="preload" as="image" href="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp">
     <link rel="preload" href="./assets/style.min.css" as="style">
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" as="style">
     
-	<!-- Balises Meta SEO -->
+	<!-- Meta tags SEO -->
 	<title>Nina Carducci | Photographe Professionnelle à Bordeaux</title>
-	<meta name="description" content="Découvrez le portfolio de Nina Carducci, photographe professionnelle spécialisée dans les mariages, concerts, portraits et événements d'entreprise sur Bordeaux et alentours. Réservez votre séance photo dès aujourd'hui !">
+	<meta name="description" content="Nina Carducci, photographe professionnelle à Bordeaux, capture vos moments uniques : mariages, concerts, portraits et événements d'entreprise. Offrez-vous des clichés inoubliables avec un rendu artistique et authentique. Réservez votre shooting photo dès maintenant et sublimez vos souvenirs avec des images de qualité exceptionnelle.">
 	<meta name="keywords" content="Photographe, Mariage, Concert, Portrait, Entreprise, Bordeaux, Shooting photo, Retouches, Album photos, Professionnel">
 	<meta name="author" content="Nina Carducci">
 	<meta name="robots" content="index, follow">
 
-	<!-- Open Graph pour Facebook et réseaux sociaux -->
+	<!-- Open Graph for Facebook & social media -->
 	<meta property="og:title" content="Nina Carducci | Photographe à Bordeaux">
 	<meta property="og:description" content="Découvrez le portfolio de Nina Carducci, photographe professionnelle à Bordeaux spécialisée en portraits, mariages et événements.">
 	<meta property="og:image" content="https://allix35.github.io/Nina-Carducci/assets/images/nina.webp">
@@ -30,19 +33,16 @@
 	<meta name="twitter:url" content="https://allix35.github.io/Nina-Carducci/">
 	<meta name="twitter:creator" content="@ninacarducci.photo">
 
-	<!-- Feuilles de style -->
+	<!-- stylesheet -->
 	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" href="./assets/style.min.css">
-	<link rel="icon" href="./assets/images/favicon/favicon.ico" type="image/x-icon">
-
 	
-    <!-- Polices Google Fonts -->
+    <!--Google Fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
 	
-    <meta charset="UTF-8">
-
+	<!--Shema.org -->
 	<script type="application/ld+json">
 		{
 			"@context": "https://schema.org",
@@ -85,7 +85,7 @@
 </head>
 
 <body>
-<div class="top-header">
+<header class="top-header">
 	<h1 class="name">Nina Carducci</h1>
 	<nav class="nav">   
 		<ul>
@@ -100,9 +100,10 @@
 			</li>
 		</ul>
 	</nav>
-</div>
+</header>
 
 <!-- SLIDER -->
+
 <section id="header">
 	<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
 		<div class="carousel-indicators">
@@ -132,7 +133,8 @@
 	</div>
 </section>
 
-<!-- SECTION À PROPOS DE MOI -->
+<!-- ABOUT -->
+
 <section id="about">
 	<div class="picture left">
 		<img src="./assets/images/nina.webp" alt="Portrait de Nina Carducci, photographe professionnelle à Bordeaux" loading="lazy">
@@ -145,6 +147,7 @@
 </section>
 
 <!-- GALLERY -->
+
 <section id="gallery">
 	<h2 class="title">Portfolio</h2>
 	<div class="container py-3">
@@ -160,6 +163,9 @@
 			<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.webp" width="440" height="440" alt="Photo portrait réalisé par Nina Carducci" aria-label="Photo portrait artistique réalisée par Nina Carducci" loading="lazy"/>			
 		</div>
 	</section>
+
+<!-- QUOTE -->
+
 	<section class="quote">
 		<figure>
 			<blockquote>
@@ -169,6 +175,9 @@
 		</figure>
 	</section>
 </div>
+
+<!-- SERVICES -->
+
 <section id="services">
 	<h2 class="title">Mes services</h2>
 	<div class="container">
@@ -205,6 +214,9 @@
 		</div>
 	</div>
 </section>
+
+<!-- QUOTE -->
+
 <section class="quote">
 	<figure>
 		<blockquote>
@@ -237,16 +249,21 @@
 		</div>
 	</div>
 </div>
+
+<!-- FOOTER -->
+
 <footer>
     <p class="copyright">&copy; 2025 Nina Carducci - Tous droits réservés</p>
 </footer>
 
-<!-- jQuery sans async pour éviter les conflits avec Bootstrap -->
+<!-- jQuery without async to avoid les conflicts with Bootstrap -->
+
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" 
 integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" 
 crossorigin="anonymous"></script>
 
-<!-- Scripts avec defer pour éviter de bloquer le rendu -->
+<!-- Scripts with defer to not block the content -->
+
 <script src="./assets/bootstrap/bootstrap.bundle.min.js" defer></script>
 <script src="./assets/maugallery.min.js" defer></script>
 <script src="./assets/scripts.min.js" defer></script>

@@ -120,8 +120,8 @@ body {
 	cursor: pointer;
 }
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-	color: #fff;
-	background-color: #887600;
+	color: #000;
+    background-color: #beb45a;
 	border-radius:0 ;
 }
 .nav-pills .nav-link {
@@ -144,7 +144,6 @@ body {
 	height: 100%;
 	object-fit: cover;
 	padding: .5em;
-	cursor: pointer;
 }
 .mg-prev, .mg-next {
 	width: 30px;
@@ -223,7 +222,7 @@ body {
 }
 .picture.right::before {
 	content: ' ';
-	background-color: #887600;
+	background-color: #BEB45A;
 	width: 374px;
 	height: 329px;
 	position: absolute;
@@ -260,7 +259,7 @@ form textarea {
 	margin-bottom: 20px;
 }
 input[type="submit"] {
-	background-color: #887600;
+	background-color:#BEB45A;
 	padding: .5em 1em
 }
 
