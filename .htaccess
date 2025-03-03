@@ -1,17 +1,14 @@
-# Activation du module de réécriture
+
 <IfModule mod_rewrite.c>
     RewriteEngine On
 
-    # Redirection HTTP vers HTTPS (optionnel, à activer si nécessaire)
     RewriteCond %{HTTPS} off
     RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
 </IfModule>
 
-# Activation de la mise en cache des fichiers statiques
 <IfModule mod_expires.c>
     ExpiresActive On
 
-    # Durée de mise en cache des fichiers statiques (1 an)
     ExpiresByType text/html "access plus 1 hour"
     ExpiresByType text/css "access plus 1 year"
     ExpiresByType text/javascript "access plus 1 year"
@@ -31,15 +28,12 @@
     ExpiresByType font/woff2 "access plus 1 year"
 </IfModule>
 
-# Ajout de Cache-Control pour renforcer la mise en cache
 <IfModule mod_headers.c>
     <FilesMatch "\.(css|js|jpg|jpeg|png|gif|svg|webp|woff|woff2|ttf|eot|otf)$">
         Header set Cache-Control "public, max-age=31536000, immutable"
     </FilesMatch>
 </IfModule>
 
-
-# Activation de la compression Gzip et Brotli si disponibles
 <IfModule mod_deflate.c>
     AddOutputFilterByType DEFLATE text/html text/plain text/xml
     AddOutputFilterByType DEFLATE text/css text/javascript application/javascript
@@ -54,22 +48,18 @@
     AddOutputFilterByType BROTLI_COMPRESS font/woff font/woff2 image/svg+xml
 </IfModule>
 
-# Désactivation de l'exploration des répertoires
 Options -Indexes
 
-# Suppression des en-têtes HTTP inutiles
 <IfModule mod_headers.c>
     Header unset X-Powered-By
     Header unset Server
     Header always unset X-Powered-By
 </IfModule>
 
-# Forcer l'utilisation de HTTP/2 si disponible
 <IfModule mod_http2.c>
     Protocols h2 h2c http/1.1
 </IfModule>
 
-# Protection contre les attaques XSS et clickjacking
 <IfModule mod_headers.c>
     Header set X-Frame-Options "SAMEORIGIN"
     Header set X-XSS-Protection "1; mode=block"
