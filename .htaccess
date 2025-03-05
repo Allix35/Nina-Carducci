@@ -1,3 +1,4 @@
+# Automatic redirection from HTTP to HTTPS 
 
 <IfModule mod_rewrite.c>
     RewriteEngine On
@@ -5,6 +6,8 @@
     RewriteCond %{HTTPS} off
     RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
 </IfModule>
+
+# Cache 
 
 <IfModule mod_expires.c>
     ExpiresActive On
@@ -28,11 +31,15 @@
     ExpiresByType font/woff2 "access plus 1 year"
 </IfModule>
 
+# Cache control
+
 <IfModule mod_headers.c>
     <FilesMatch "\.(css|js|jpg|jpeg|png|gif|svg|webp|woff|woff2|ttf|eot|otf)$">
         Header set Cache-Control "public, max-age=31536000, immutable"
     </FilesMatch>
 </IfModule>
+
+# Gzip & Brotli compression
 
 <IfModule mod_deflate.c>
     AddOutputFilterByType DEFLATE text/html text/plain text/xml
@@ -48,7 +55,11 @@
     AddOutputFilterByType BROTLI_COMPRESS font/woff font/woff2 image/svg+xml
 </IfModule>
 
+# Disable directory browsing
+
 Options -Indexes
+
+# Delete useless HTTP header
 
 <IfModule mod_headers.c>
     Header unset X-Powered-By
@@ -56,9 +67,13 @@ Options -Indexes
     Header always unset X-Powered-By
 </IfModule>
 
+# Force to use HTTP
+
 <IfModule mod_http2.c>
     Protocols h2 h2c http/1.1
 </IfModule>
+
+# Security against XSS & Clickjacking attaks
 
 <IfModule mod_headers.c>
     Header set X-Frame-Options "SAMEORIGIN"
